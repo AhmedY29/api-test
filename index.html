@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Posts - Ahmed</title>
+  </head>
+  <body>
+    <section class="add-post-form">
+      <div class="form">
+        <h1>انشئ بوست جديد</h1>
+        <div class="form-group">
+          <label for="post-image">صورة البوست</label>
+          <input required id="post-image" placeholder="أدخل محتوى البوست" />
+        </div>
+        <div class="form-group">
+          <label for="username">اسم المستخدم</label>
+          <input required id="username" type="text" placeholder="أدخل اسمك" />
+        </div>
+
+        <div class="form-group">
+          <label for="post-content">محتوى البوست</label>
+          <textarea
+            required
+            id="post-content"
+            placeholder="أدخل محتوى البوست"
+          ></textarea>
+        </div>
+
+        <button id="submit-btn">أضافة</button>
+      </div>
+    </section>
+
+    <section class="posts-section">
+      <div class="posts-title">
+        <h1>البوستات</h1>
+      </div>
+      <div id="posts">
+        <!-- <div class="post-item">
+          <div class="post-author">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
+              width="30"
+              alt=""
+            />
+            <h4>Name</h4>
+          </div>
+          <div class="post-info">
+            <img
+              src="https://images.pexels.com/photos/17084423/pexels-photo-17084423/free-photo-of-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              width="250"
+              height="300"
+              alt="post-item"
+              class="post-img"
+            />
+            <p>Text</p>
+            <div class="btns">
+              <button class="btn btn-primary">عرض التفاصيل</button>
+              <button class="btn btn-delete">حذف</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
