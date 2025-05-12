@@ -1,11 +1,12 @@
 let username = document.getElementById("username");
 let postContent = document.getElementById("post-content");
 let postImg = document.getElementById("post-image");
+let errorMsg = document.getElementById("errorMsg");
 let submitBtn = document.getElementById("submit-btn");
 
 let posts = document.getElementById("posts");
 
-fetch("http://6821ad3d259dad2655b02055.mockapi.io/posts/posts")
+fetch("https://6821ad3d259dad2655b02055.mockapi.io/posts/posts")
   .then((response) => response.json())
   .then((data) =>
     data.foreach((post) => {
@@ -81,8 +82,10 @@ fetch("http://6821ad3d259dad2655b02055.mockapi.io/posts/posts")
 
 submitBtn.addEventListener("click", () => {
   console.log(username.value, postContent.value, postImg.value);
-
-  fetch("http://6821ad3d259dad2655b02055.mockapi.io/posts/posts", {
+  if (username.value == "" && postContent.value == "" && post.value) {
+    errorMsg.innerText = "أدخل جميع الحقول";
+  }
+  fetch("https://6821ad3d259dad2655b02055.mockapi.io/posts/posts", {
     method: "POST",
     body: JSON.stringify({
       username: username.value,

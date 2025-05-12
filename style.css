@@ -45,6 +45,10 @@ body{
     gap: 2%;
 }
 
+#errorMsg{
+    color: rgb(211, 77, 77);
+}
+
 
 .posts-section .posts-title{
     text-align: center;
