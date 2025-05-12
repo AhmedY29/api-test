@@ -8,7 +8,7 @@ let posts = document.getElementById("posts");
 fetch("http://6821ad3d259dad2655b02055.mockapi.io/posts/posts")
   .then((response) => response.json())
   .then((data) =>
-    data.map((post) => {
+    data.foreach((post) => {
       let postItem = document.createElement("div");
       postItem.classList.add("post-item");
 
